@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Assignment 5 </title>
+        <link rel="stylesheet" href="formStyle.css">
+        <script type="text/javascript">
+
+            function noInputValidation() {
+                var firName = document.getElementById("firstName");
+                var lasName = document.getElementById("lastName");
+                var gndr = document.getElementById("gender");
+                var email = document.getElementById("email");
+                var phoneNo = document.getElementById("Number");
+
+                if(firName.value == "" || lasName.value == "" ||  email.value == "" || phoneNo.value == "" || gndr.value == ""){
+                    alert("Every Field with * is Mandatory.");
+                }
+
+                else{
+                    
+                }
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <form class="submission-form" onsubmit="noInputValidation()" action="connect.php" method="POST">
+            <h2 id="header"> <center> National Workshop WT Form </center> </h2>
+
+            <label for="firstName">
+                First Name <mark>*</mark>
+            </label>
+            <input type="text" id="firstName" name="fname">
+            
+            <label for="lastName">
+                Last Name <mark>*</mark>
+            </label>
+            <input type="text" id="lastName" name="lname">
+            <label for="gender">
+                Gender <mark>*</mark>
+            </label>
+            <input type="radio" id="gender" name="Gender" value="male">
+            <label for="male"> Male</label>
+            <input type="radio" id="gender" name="Gender" value="female">
+            <label for="female"> Female</label>
+            <label for="position">
+                Designation <mark>*</mark>
+            </label>
+            <select name="pos">
+                <option selected hidden value=""> Student </option>
+                <option value="Faculty"> Faculty </option>     
+                <option value="Representative"> Representative </option>
+                <option value="Other"> Other </option>
+            </select>
+
+            <label for="birthdate">
+                 Birthdate <mark>*</mark>
+            </label>
+            <input type="date" id="birthdate" name="bdate">
+
+            
+
+            <label for="email">
+                Email <mark>*</mark>
+            </label>
+            <input type="email" id="email" name="mail">
+
+            <label for="Number">
+                Number <mark>*</mark>
+            </label>
+            <input type="tel" id="Number" name="phno">
+
+            
+
+            <input type="submit" value="Submit" id="submitBtn">
+        </form>
+    </body>
+</html>

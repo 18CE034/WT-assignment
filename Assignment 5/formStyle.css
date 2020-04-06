@@ -1,0 +1,71 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header{
+    font-weight: 100;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.submission-form{
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 6px;
+    background: green;
+}
+
+label{
+    display: block;
+    padding: 1rem 0rem .35rem;
+    text-transform: uppercase;
+    font-size: 15px
+}
+
+input, textarea{
+    display: block;
+    width: 100%;
+    border: 1.5px solid #456552;
+    padding: .40rem;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+#submitBtn{
+    border: 0px;
+    background: #597866;
+    padding: .5rem;
+    color: white;
+    margin-top: 1rem;
+    width: auto;
+    text-transform: uppercase;
+    box-shadow: 0 9px #999;
+    cursor: pointer;
+    transition: .4s background ease;
+}
+
+#submitBtn:hover{
+    background: #202C25;
+}
+
+#submitBtn:active{
+    background-color: #999;
+    box-shadow: 0 5px #999;
+    transform: translateY(2px);
+}
+
+select{
+    display: block;
+    border: 1.5px solid #456552;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+mark{
+    background-color: green;
+    color: red;
+}
